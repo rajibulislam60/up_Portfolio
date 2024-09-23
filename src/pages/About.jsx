@@ -1,24 +1,81 @@
-import React from 'react'
+import React from "react";
+import { CgQuote } from "react-icons/cg";
 
 const About = () => {
   return (
-    <div className="h-screen w-screen py-11">
-      <div className="h-full w-full bg-white">
+    <div className="w-screen h-screen py-11 overflow-auto">
+      <div className="w-full bg-white">
         <div className="px-[60px] py-[60px]">
-          <div className="w-full border-[3px]  mx-auto relative">
-            <div  className="uppercase text-[32px] font-semibold leading-[36px] bg-white absolute top-[-30px] left-[50px]">
-              <h3 className='bg-black/15 px-[30px] py-2'>
-                About me
-              </h3>
+          <div className="w-full border-[3px] mx-auto relative">
+            <div className="uppercase text-[32px] font-semibold leading-[36px] bg-white absolute top-[-30px] left-[50px]">
+              <h3 className="bg-black/15 px-[30px] py-2">About me</h3>
             </div>
-            <div className="py-[60px] px-[50px] text-black/50">
-              <p className='text-[24px] font-medium leading-[32px]'>
-                My name is Md. Rajibul Islam Rajib and I am a Web Developer, and I'm very
-                passionate and dedicated to my work. With fresher as
-                a professional Web Developer, I have acquired the skills and
+            <div className="py-[80px] px-[50px] text-black/50">
+              <p className="text-[24px] font-medium leading-[32px]">
+                My name is Md. Rajibul Islam Rajib and I am a Web Developer, and
+                I'm very passionate and dedicated to my work. With fresher as a
+                professional Web Developer, I have acquired the skills and
                 knowledge necessary to make your project a success. I enjoy
-                every step of the developing and design process, from discussion and
-                collaboration. Thanks a lot for your attention and your trust!
+                every step of the developing and design process, from discussion
+                and collaboration. Thanks a lot for your attention and your
+                trust!
+              </p>
+              <div className="w-full h-[3px] bg-black/15 mt-[60px]"></div>
+              <div className="flex mt-[60px]">
+                <div className="w-[50%] text-[24px] font-normal leading-[32px] text-black/50">
+                  <p className="mt-3">
+                    Name: <span className="ml-3">Md. Rajibul Islam Rajib</span>
+                  </p>
+                  <p className="mt-3">
+                    City: <span className="ml-9">Dhaka, Bangladesh</span>
+                  </p>
+                  <p className="mt-3">
+                    Phone:{" "}
+                    <span className="text-black ml-2">+880 198 186 91 12</span>
+                  </p>
+                  <p className="mt-3">
+                    Github: https://github.com/rajibulislam60
+                  </p>
+                </div>
+                <div className="w-[50%] text-[24px] font-normal leading-[32px] text-black/50">
+                  <p className="mt-3">
+                    Age: <span className="ml-11">22</span>
+                  </p>
+                  <p className="mt-3">
+                    Job: <span className="ml-12">Web Developer</span>
+                  </p>
+                  <p className="mt-3">
+                    Email:{" "}
+                    <span className="text-black">
+                      rajibulislam60707877@gmail.com
+                    </span>
+                  </p>
+                  <p className="mt-3">Freelance: Available</p>
+                </div>
+              </div>
+              <div>
+                <button className="text-[24px] font-medium leading-[28px] border px-[30px] py-2 hover:bg-black/50 hover:text-white duration-[0.8s] mt-[50px]">
+                  Download CV
+                </button>
+              </div>
+            </div>
+          </div>
+          <div className="w-full border-[3px] mx-auto relative mt-[90px]">
+            <div className="uppercase text-[32px] font-semibold leading-[36px] bg-white absolute top-[-30px] left-[50px]">
+              <h3 className="bg-black/15 px-[30px] py-2">Testimonials</h3>
+            </div>
+            <div className="py-[30px] px-[50px] text-black/50">
+              <div className="text-[160px]">
+                <CgQuote />
+              </div>
+              <p className="text-[24px] font-medium leading-[32px]">
+                My name is Md. Rajibul Islam Rajib and I am a Web Developer, and
+                I'm very passionate and dedicated to my work. With fresher as a
+                professional Web Developer, I have acquired the skills and
+                knowledge necessary to make your project a success. I enjoy
+                every step of the developing and design process, from discussion
+                and collaboration. Thanks a lot for your attention and your
+                trust!
               </p>
             </div>
           </div>
@@ -26,6 +83,6 @@ const About = () => {
       </div>
     </div>
   );
-}
+};
 
-export default About
+export default About;
