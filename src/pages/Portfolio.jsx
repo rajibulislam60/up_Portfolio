@@ -1,13 +1,11 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
-import tryImg from './../../public/Rajibul.jpg'
+import FacebookImg from './../../public/facebook.jpg'
+import LinkedInImg from "./../../public/linkedIn.jpg";
+import GithubImg from "./../../public/github.jfif";
 
 const Portfolio = () => {
-    let [isVisible, setIsVisible] = useState(false)
 
-    let handleShow= ()=> {
-        setIsVisible(!isVisible)
-    }
 
   return (
     <div className="w-screen h-screen py-11 overflow-auto">
@@ -21,22 +19,48 @@ const Portfolio = () => {
             </div>
             <div className="py-[80px] px-[50px]">
               <div>
-                <ul>
-                  <li>
-                    <img
-                      onClick={handleShow}
-                      className="w-[400px]"
-                      src={tryImg}
-                      alt=""
-                    />
+                <ul className="flex flex-wrap justify-between gap-[30px]">
+                  <li className="w-[48%] h-[250px] overflow-hidden">
+                    <a
+                      href="https://www.facebook.com/profile.php?id=100025401429633"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        className="w-full h-full object-cover cursor-pointer duration-500 ease-in-out hover:scale-110"
+                        src={FacebookImg}
+                        alt="Portfolio Image 1"
+                      />
+                    </a>
+                  </li>
+                  <li className="w-[48%] h-[250px] overflow-hidden">
+                    <a
+                      href="https://www.linkedin.com/in/md-rajibul-islam-rajib-513229257"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        className="w-full h-full object-cover cursor-pointer duration-500 ease-in-out hover:scale-110"
+                        src={LinkedInImg}
+                        alt="Portfolio Image 1"
+                      />
+                    </a>
+                  </li>
+                  <li className="w-[48%] h-[250px] overflow-hidden">
+                    <a
+                      href="https://github.com/rajibulislam60"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        className="w-full h-full object-cover cursor-pointer duration-500 ease-in-out hover:scale-110"
+                        src={GithubImg}
+                        alt="Portfolio Image 1"
+                      />
+                    </a>
                   </li>
                 </ul>
               </div>
-              {isVisible && (
-                <div className="w-[800px] h-[800px]">
-                  <Link to="https://www.facebook.com/profile.php?id=100025401429633"> new tap</Link>
-                </div>
-              )}
             </div>
           </div>
         </div>
