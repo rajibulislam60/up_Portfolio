@@ -41,6 +41,11 @@ const Side = () => {
                 PORTFOLIO
               </Link>
             </li>
+            <li className="text-4 font-semibold leading-[24px] hover:text-primary duration-[0.4s] mt-3">
+              <Link onClick={closeMenu} to="/blog">
+                BLOG
+              </Link>
+            </li>
           </ul>
         </div>
       </div>
