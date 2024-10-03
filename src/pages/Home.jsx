@@ -9,9 +9,11 @@ const Home = () => {
           Md. Rajibul Islam Rajib
         </h2>
 
-        <div className="text-[22px] font-semibold mt-[14px]">
+        <div className="text-[22px] font-semibold mt-[14px] text-black/50">
           <TypeAnimation
             sequence={[
+              "MERN Stack Developer",
+              1000,
               "Web Developer",
               1000,
               "Front-End Developer",
