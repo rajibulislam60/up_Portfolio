@@ -1,3 +1,15 @@
+/* styles.css */
+.hide-scrollbar {
+  @apply overflow-auto; /* Keep scrollable behavior */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* WebKit browsers */
+}
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

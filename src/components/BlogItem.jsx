@@ -8,7 +8,7 @@ const BlogItem = ({ href, src, title, date }) => {
         <div className=" w-full h-full overflow-hidden">
           <a href={href} target="_blank" rel="noopener noreferrer">
             <img
-              className="w-full h-full object-cover cursor-pointer duration-500 ease-in-out hover:scale-110 relative"
+              className="w-full h-full cursor-pointer duration-500 ease-in-out hover:scale-110 relative"
               src={src}
               alt="Portfolio Image 1"
             />
@@ -27,13 +27,13 @@ const BlogItem = ({ href, src, title, date }) => {
         </h5>
         <div className="w-full h-[2px] bg-black/20 mt-5 mb-5"></div>
 
-        <h2 className="text-[24px] font-semibold leading-[28px]">
-          {title}
-          
-        </h2>
-        <button className="text-[24px] font-medium leading-[28px] border px-[30px] py-2 hover:bg-black/50 hover:text-white duration-[0.8s] mt-[30px]">
+        <h2 className="text-[24px] font-semibold leading-[28px]">{title}</h2>
+        <a href={href} target="_blank" rel="noopener noreferrer">
+          <button className="text-[24px] font-medium leading-[28px] border px-[30px] py-2 hover:bg-black/50 hover:text-white duration-[0.8s] mt-[30px]">
           Read more
         </button>
+        </a>
+        
       </div>
     </div>
   );
