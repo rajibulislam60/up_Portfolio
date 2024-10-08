@@ -1,5 +1,5 @@
 import React from 'react'
-import ServicesItem from '../components/servicesItem';
+import ServicesItem from '../components/ServicesItem';
 import { BiVector } from "react-icons/bi";
 import { GoBrowser } from "react-icons/go";
 
