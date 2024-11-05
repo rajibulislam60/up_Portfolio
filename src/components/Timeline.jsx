@@ -3,6 +3,7 @@ import Simplilearn from "./../../public/simplilearn.jpg";
 import Creative from "./../../public/creative.jpg";
 import Bohubrihi from "/Bcertificated.png";
 import G_learning from "/great learning certificated.png";
+import GL_JavaScript_C from "/GL JavaScript _C.png";
 
 const Timeline = () => {
   const [currentCertificate, setCurrentCertificate] = useState(null);
@@ -152,6 +153,41 @@ const Timeline = () => {
                   </button>
                   <img
                     src={G_learning}
+                    alt="certificate"
+                    className="w-full h-auto mb-4"
+                  />
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
+        <div className="flex justify-between items-center mt-[30px]">
+          <div>
+            <h3 className="text-[24px] font-semibold leading-[28px] text-black">
+              Great Learning
+            </h3>
+            <h5 className="text-[20px] font-medium leading-[24px] mt-[14px]">
+              JavaScript Projects
+            </h5>
+          </div>
+          <div>
+            <button
+              onClick={() => handleCertificateShow("GL_JavaScript_C")}
+              className="w-[140px] text-[20px] font-medium leading-[24px] border text-center px-2 py-2"
+            >
+              2024
+            </button>
+            {currentCertificate === "GL_JavaScript_C" && (
+              <div className="fixed inset-0 bg-black/60 flex justify-center items-center z-50">
+                <div className="w-[800px] bg-white text-center p-[50px] relative">
+                  <button
+                    onClick={() => setCurrentCertificate(null)}
+                    className="bg-red-500 px-2 rounded-full absolute top-4 right-4 text-white"
+                  >
+                    X
+                  </button>
+                  <img
+                    src={GL_JavaScript_C}
                     alt="certificate"
                     className="w-full h-auto mb-4"
                   />
