@@ -70,13 +70,13 @@ const Side = () => {
             </li>
             <li
               className={
-                location.pathname === "/blog"
+                location.pathname === "/work"
                   ? "text-4 font-semibold leading-[24px] text-black duration-[0.4s] mt-3"
                   : "text-4 font-semibold leading-[24px] text-primary duration-[0.4s] mt-3"
               }
             >
-              <Link onClick={closeMenu} to="/blog">
-                BLOG
+              <Link onClick={closeMenu} to="/work">
+                WORK
               </Link>
             </li>
             <li

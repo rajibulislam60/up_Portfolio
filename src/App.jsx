@@ -10,8 +10,8 @@ import RootLayOut from "./layout/RootLayOut";
 import About from "./pages/About";
 import Service from "./pages/Service";
 import Portfolio from "./pages/Portfolio";
-import Blog from "./pages/Blog";
 import Contacts from "./pages/Contacts";
+import Work from "./pages/Work";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -21,7 +21,7 @@ const router = createBrowserRouter(
         <Route path="/about" element={<About />} />
         <Route path="/service" element={<Service />} />
         <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/blog" element={<Blog />} />
+        <Route path="/work" element={<Work />} />
         <Route path="/contacts" element={<Contacts />} />
       </Route>
     </>

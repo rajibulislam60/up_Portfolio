@@ -5,7 +5,7 @@ import Web2 from "./../../public/web2.png";
 import Web3 from "./../../public/web3.png";
 import Web4 from "./../../public/web4.png";
 
-const Blog = () => {
+const Work = () => {
   return (
     <div className="w-screen h-screen py-11">
       <div className=" w-full h-full bg-white">
@@ -47,4 +47,4 @@ const Blog = () => {
   );
 }
 
-export default Blog
+export default Work

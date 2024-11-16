@@ -107,24 +107,29 @@ const About = () => {
               </div>
             </div>
           </div>
-          <Timeline/>
-          
+          <Timeline />
+
           <div className="w-full border-[3px] mx-auto relative mt-[90px]">
             <div className="uppercase text-[32px] font-semibold leading-[36px] bg-white absolute top-[-30px] left-[50px]">
-              <h3 className="bg-black/15 px-[30px] py-2">Testimonials</h3>
+              <h3 className="bg-black/15 px-[30px] py-2">Career Objective</h3>
             </div>
             <div className="py-[30px] px-[50px] text-black/50">
               <div className="text-[160px]">
                 <CgQuote />
               </div>
               <p className="text-[24px] font-medium leading-[32px]">
-                My name is Md. Rajibul Islam Rajib and I am a Web Developer, and
-                I'm very passionate and dedicated to my work. With fresher as a
-                professional Web Developer, I have acquired the skills and
-                knowledge necessary to make your project a success. I enjoy
-                every step of the developing and design process, from discussion
-                and collaboration. Thanks a lot for your attention and your
-                trust!
+                My name is Md. Rajibul Islam Rajib, and I am a passionate and
+                dedicated Web Developer specializing in the MERN stack. With
+                experience in MongoDB, Express.js, React.js, Node.js, and tools
+                like Tailwind CSS, Bootstrap, and React Icons, I have the skills
+                to create responsive, user-friendly web applications. As a
+                fresher, I have worked on developing reusable components,
+                implementing dark/light themes, designing interactive UIs, and
+                integrating routing structures in React projects. I take pride
+                in every step of the development and design process, from
+                discussing ideas to collaborating on solutions. Thank you for
+                your trust and attention—I'm excited to bring value to your
+                projects!
               </p>
             </div>
           </div>
