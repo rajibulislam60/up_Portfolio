@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { CgQuote } from "react-icons/cg";
-import Resume from "./../../public/resume.png";
+import Resume from "./../../public/Rajibul_Islam.pdf";
 import Timeline from "../components/Timeline";
 
 const About = () => {
@@ -89,10 +89,10 @@ const About = () => {
                       >
                         X
                       </button>
-                      <img
+                      <embed
                         src={Resume}
-                        alt="CV"
-                        className="w-full h-auto mb-4"
+                        type="application/pdf"
+                        className="w-full h-[900px] mb-4"
                       />
                       <a
                         href={Resume}
