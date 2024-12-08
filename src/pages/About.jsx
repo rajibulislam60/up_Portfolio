@@ -10,7 +10,6 @@ const About = () => {
     setCVOpen(true);
   };
 
-
   return (
     <div className="w-screen h-screen py-11">
       <div className="w-full h-full bg-white">
