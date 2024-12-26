@@ -4,6 +4,8 @@ import Web1 from "./../../public/web1.png";
 import Web2 from "./../../public/web2.png";
 import Web3 from "./../../public/web3.png";
 import Web4 from "./../../public/web4.png";
+import Web5 from "./../../public/product_cart.png";
+import video1 from "./../../public/project_video.mp4";
 
 const Work = () => {
   return (
@@ -38,6 +40,18 @@ const Work = () => {
                 src={Web4}
                 title="How to create Web Development project using React"
                 date="Sept 10, 2024"
+              />
+              <BlogItem
+                href="https://front-end-test-task-beryl.vercel.app/"
+                src={Web5}
+                title="This project work by Vanilla JavaScript."
+                date="Dec 20, 2024"
+              />
+              <BlogItem
+                href="https://news-paper-one.vercel.app/"
+                videoSrc={video1}
+                title="This is a newspapar web site, it's work by React.js frame work and functionallty work by JavaScript."
+                date="Dec 25, 2024"
               />
             </div>
           </div>

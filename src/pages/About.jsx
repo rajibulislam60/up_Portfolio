@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { CgQuote } from "react-icons/cg";
-import Resume from "./../../public/Rajibul_Islam.pdf";
+import Resume from "./../../public/SimpleResume.pdf";
 import Timeline from "../components/Timeline";
 
 const About = () => {

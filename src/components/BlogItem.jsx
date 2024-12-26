@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-const BlogItem = ({ href, src, title, date }) => {
+const BlogItem = ({ href, src, title, date, videoSrc }) => {
   return (
     <div className="flex items-center gap-10 mt-[30px]">
       <div className="w-[48%] h-[250px] relative">
@@ -11,6 +11,11 @@ const BlogItem = ({ href, src, title, date }) => {
               className="w-full h-full cursor-pointer duration-500 ease-in-out hover:scale-110 relative"
               src={src}
               alt="Portfolio Image 1"
+            />
+            <video
+              className="w-full h-full cursor-pointer duration-500 ease-in-out hover:scale-110 relative"
+              src={videoSrc}
+             
             />
           </a>
         </div>
