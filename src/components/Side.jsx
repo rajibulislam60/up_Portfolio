@@ -6,7 +6,6 @@ import { FaLinkedin } from "react-icons/fa6";
 
 
 const Side = () => {
-    const closeMenu = () => onClick(false);
     let location = useLocation()
 
   return (
@@ -23,71 +22,77 @@ const Side = () => {
           <h2 className="text-2xl font-semibold pt-[50px] mb-[30px]">
             Md. Rajibul Islam Rajib
           </h2>
-          <ul className="text-black/60">
-            <li
-              className={
+          <ul className="text-black/60 text-left px-8">
+          <li
+              className={`${
                 location.pathname === "/"
-                  ? "text-4 font-semibold leading-[24px] text-black duration-[0.4s] mt-3"
-                  : "text-4 font-semibold leading-[24px] text-primary duration-[0.4s] mt-3"
-              }
+                  ? "text-black border bg-teal-100"
+                  : "text-primary"
+              } font-semibold leading-[24px] duration-[0.4s] mt-3 relative group`}
             >
-              <Link onClick={closeMenu} to="/">
-                HOME
+              <Link to="/" className="block px-1 py-2">
+                <span className="absolute inset-0 bg-teal-500 w-0 group-hover:w-full h-full transition-all duration-300"></span>
+                <span className="relative group-hover:text-white z-10">HOME</span>
               </Link>
             </li>
             <li
-              className={
+              className={`${
                 location.pathname === "/about"
-                  ? "text-4 font-semibold leading-[24px] text-black duration-[0.4s] mt-3"
-                  : "text-4 font-semibold leading-[24px] text-primary duration-[0.4s] mt-3"
-              }
+                  ? "text-black border bg-teal-100"
+                  : "text-primary"
+              } font-semibold leading-[24px] duration-[0.4s] mt-3 relative group`}
             >
-              <Link onClick={closeMenu} to="/about">
-                ABOUT
+              <Link to="/about" className="block px-1 py-2">
+                <span className="absolute inset-0 bg-teal-500 w-0 group-hover:w-full h-full transition-all duration-300"></span>
+                <span className="relative group-hover:text-white z-10">ABOUT</span>
               </Link>
             </li>
             <li
-              className={
+              className={`${
                 location.pathname === "/service"
-                  ? "text-4 font-semibold leading-[24px] text-black duration-[0.4s] mt-3"
-                  : "text-4 font-semibold leading-[24px] text-primary duration-[0.4s] mt-3"
-              }
+                  ? "text-black border bg-teal-100"
+                  : "text-primary"
+              } font-semibold leading-[24px] duration-[0.4s] mt-3 relative group`}
             >
-              <Link onClick={closeMenu} to="/service">
-                SERVICES
+              <Link to="/service" className="block px-1 py-2">
+                <span className="absolute inset-0 bg-teal-500 w-0 group-hover:w-full h-full transition-all duration-300"></span>
+                <span className="relative group-hover:text-white z-10">SERVICES</span>
               </Link>
             </li>
             <li
-              className={
+              className={`${
                 location.pathname === "/portfolio"
-                  ? "text-4 font-semibold leading-[24px] text-black duration-[0.4s] mt-3"
-                  : "text-4 font-semibold leading-[24px] text-primary duration-[0.4s] mt-3"
-              }
+                  ? "text-black border bg-teal-100"
+                  : "text-primary"
+              } font-semibold leading-[24px] duration-[0.4s] mt-3 relative group`}
             >
-              <Link onClick={closeMenu} to="/portfolio">
-                PORTFOLIO
+              <Link to="/portfolio" className="block px-1 py-2">
+                <span className="absolute inset-0 bg-teal-500 w-0 group-hover:w-full h-full transition-all duration-300"></span>
+                <span className="relative group-hover:text-white z-10">PORTFOLIO</span>
               </Link>
             </li>
             <li
-              className={
+              className={`${
                 location.pathname === "/work"
-                  ? "text-4 font-semibold leading-[24px] text-black duration-[0.4s] mt-3"
-                  : "text-4 font-semibold leading-[24px] text-primary duration-[0.4s] mt-3"
-              }
+                  ? "text-black border bg-teal-100"
+                  : "text-primary"
+              } font-semibold leading-[24px] duration-[0.4s] mt-3 relative group`}
             >
-              <Link onClick={closeMenu} to="/work">
-                WORK
+              <Link to="/work" className="block px-1 py-2">
+                <span className="absolute inset-0 bg-teal-500 w-0 group-hover:w-full h-full transition-all duration-300"></span>
+                <span className="relative group-hover:text-white z-10">WORK</span>
               </Link>
             </li>
             <li
-              className={
+              className={`${
                 location.pathname === "/contacts"
-                  ? "text-4 font-semibold leading-[24px] text-black duration-[0.4s] mt-3"
-                  : "text-4 font-semibold leading-[24px] text-primary duration-[0.4s] mt-3"
-              }
+                  ? "text-black border bg-teal-100"
+                  : "text-primary"
+              } font-semibold leading-[24px] duration-[0.4s] mt-3 relative group`}
             >
-              <Link onClick={closeMenu} to="/contacts">
-                CONTACTS
+              <Link to="/contacts" className="block px-1 py-2">
+                <span className="absolute inset-0 bg-teal-500 w-0 group-hover:w-full h-full transition-all duration-300"></span>
+                <span className="relative group-hover:text-white z-10">CONTACTS</span>
               </Link>
             </li>
           </ul>
