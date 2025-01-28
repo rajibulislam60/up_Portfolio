@@ -1,8 +1,8 @@
 import React from 'react'
 
-
-const BlogItem = ({ href, src, title, date, videoSrc }) => {
-  let workData = [{
+const BlogItem = () => {
+  let workData = [
+    {
     id:1,
     image:"/web1.png",
     name:"TeaPoz",
@@ -65,14 +65,15 @@ const BlogItem = ({ href, src, title, date, videoSrc }) => {
     link:"https://e-commerce-store-six-zeta.vercel.app/",
     creater:"Rajibul Islam"
   },
-
 ]
   return (
     <>
-      <div>
-        {workData.map((item)=>(
-          <div key={item.id}>
-            <div className="flex items-center gap-10 mt-[30px]">
+      <div className='px-5 py-5'>
+        {workData.map((item, index)=>(
+          <div key={item.id} className={`flex items-center justify-center gap-10 mt-[30px] ${
+            index % 2 === 0 ? "bg-gray-100" : "bg-white"
+          } p-5 rounded-lg shadow-md`}>
+            <div className="flex items-center justify-center gap-10 mt-[30px]">
       <div className="w-[48%] h-[250px] relative">
         <div className=" w-full h-full overflow-hidden">
           <a href={item.link} target="_blank" rel="noopener noreferrer">
