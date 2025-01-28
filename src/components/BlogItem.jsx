@@ -13,13 +13,58 @@ const BlogItem = ({ href, src, title, date, videoSrc }) => {
   },
   {
     id:2,
-    image:"/web2.png",
-    name:"TeaPoz",
+    image:"/movieSite.png",
+    name:"Secret Movie",
     details:"How to create Web Development project using React",
     date:"Sept 10, 2024",
-    link:"https://teapoz.vercel.app/",
+    link:"https://movie-site-sage.vercel.app/",
     creater:"Rajibul Islam"
-  }
+  },
+  {
+    id:3,
+    image:"/coder24.png",
+    name:"Coder24",
+    details:"This is Coder24 web site. This site work for competition, course details and addmition.",
+    date:"Sept 10, 2024",
+    link:"https://coder24.vercel.app/",
+    creater:"Rajibul Islam"
+  },
+  {
+    id:4,
+    image:"/weatherApp.png",
+    name:"Weather App",
+    details:"This is Weather App.",
+    date:"Sept 10, 2024",
+    link:"https://weather-app-chi-two-58.vercel.app/",
+    creater:"Rajibul Islam"
+  },
+  {
+    id:5,
+    image:"/aiChat1.png",
+    name:"AI Chat App",
+    details:"This project work by Next.js. This is AI chat app.",
+    date:"Sept 10, 2024",
+    link:"https://ai-chat-ecru-iota.vercel.app/",
+    creater:"Rajibul Islam"
+  },
+  {
+    id:6,
+    image:"/todo.png",
+    name:"To Do App",
+    details:"This project work by React.js. This is Task managment app, have add, update, delete option.",
+    date:"Sept 10, 2024",
+    link:"https://task-management-ten-beige.vercel.app/",
+    creater:"Rajibul Islam"
+  },
+  {
+    id:7,
+    image:"/e-commerce.png",
+    name:"E-Commerce Site",
+    details:"This project work by React.js. There have every kind of option like- products, ads, related products, cart, add cart etc.",
+    date:"Sept 10, 2024",
+    link:"https://e-commerce-store-six-zeta.vercel.app/",
+    creater:"Rajibul Islam"
+  },
 
 ]
   return (
