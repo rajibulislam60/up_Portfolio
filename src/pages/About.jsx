@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { CgQuote } from "react-icons/cg";
 import Resume from "./../../public/SimpleResume.pdf";
 import Timeline from "../components/Timeline";
+import Skills from "../components/Skills";
 
 const About = () => {
   const [cvOpen, setCVOpen] = useState(false);
@@ -20,13 +21,7 @@ const About = () => {
             </div>
             <div className="py-[80px] px-[50px] text-black/50">
               <p className="text-[24px] font-medium leading-[32px]">
-                My name is Md. Rajibul Islam Rajib and I am a Web Developer, and
-                I'm very passionate and dedicated to my work. With fresher as a
-                professional Web Developer, I have acquired the skills and
-                knowledge necessary to make your project a success. I enjoy
-                every step of the developing and design process, from discussion
-                and collaboration. Thanks a lot for your attention and your
-                trust!
+              Hi, I'm Md. Rajibul Islam Rajib, a passionate Frontend Developer specializing in building responsive, user-friendly web applications. I love turning designs into interactive, pixel-perfect experiences using React.js, Next.js, JavaScript, Tailwind CSS, and the MERN stack.
               </p>
               <div className="w-full h-[3px] bg-black/15 mt-[60px]"></div>
               <div className="flex mt-[60px]">
@@ -105,7 +100,9 @@ const About = () => {
                 )}
               </div>
             </div>
+            
           </div>
+          <Skills/>
           <Timeline />
 
           <div className="w-full border-[3px] mx-auto relative mt-[90px]">
@@ -117,18 +114,7 @@ const About = () => {
                 <CgQuote />
               </div>
               <p className="text-[24px] font-medium leading-[32px]">
-                My name is Md. Rajibul Islam Rajib, and I am a passionate and
-                dedicated Web Developer specializing in the MERN stack. With
-                experience in MongoDB, Express.js, React.js, Node.js, and tools
-                like Tailwind CSS, Bootstrap, and React Icons, I have the skills
-                to create responsive, user-friendly web applications. As a
-                fresher, I have worked on developing reusable components,
-                implementing dark/light themes, designing interactive UIs, and
-                integrating routing structures in React projects. I take pride
-                in every step of the development and design process, from
-                discussing ideas to collaborating on solutions. Thank you for
-                your trust and attention—I'm excited to bring value to your
-                projects!
+              I am a passionate Frontend Developer specializing in React.js, Next.js, and the MERN stack, with a keen eye for building user-friendly, scalable, and high-performance web applications. My goal is to contribute to a dynamic development team where I can apply my skills in responsive design, interactive UI components, and modern web technologies.
               </p>
             </div>
           </div>

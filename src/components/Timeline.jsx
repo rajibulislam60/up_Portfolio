@@ -27,14 +27,14 @@ const certificatedData = [
     institute: "Great Learning",
     skill: "Front End Developer - HTML",
     year: "2024",
-    image: "/great-learning-certificated.png",
+    image: "/great learning certificated.png",
   },
   {
     id: 5,
     institute: "Great Learning",
     skill: "JavaScript Projects",
     year: "2024",
-    image: "/GL-JavaScript-C.png",
+    image: "/gl.png",
   },
 ];
 
