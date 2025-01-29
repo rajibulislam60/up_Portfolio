@@ -1,56 +1,46 @@
 import React, { useState } from "react";
-import Simplilearn from "./../../public/simplilearn.jpg";
-import Creative from "./../../public/creative.jpg";
-import Bohubrihi from "/Bcertificated.png";
-import G_learning from "/great learning certificated.png";
-import GL_JavaScript_C from "/GL JavaScript _C.png";
+
+const certificatedData = [
+  {
+    id: 1,
+    institute: "Creative IT Institute",
+    skill: "MERN Stack Development",
+    year: "2023-Continue",
+    image: "/creative.jpg",
+  },
+  {
+    id: 2,
+    institute: "Simplilearn",
+    skill: "Basic Front End Development",
+    year: "2024",
+    image: "/simplilearn.jpg",
+  },
+  {
+    id: 3,
+    institute: "Bohubrihi",
+    skill: "Introduction to JavaScript",
+    year: "2024",
+    image: "/Bcertificated.png",
+  },
+  {
+    id: 4,
+    institute: "Great Learning",
+    skill: "Front End Developer - HTML",
+    year: "2024",
+    image: "/great-learning-certificated.png",
+  },
+  {
+    id: 5,
+    institute: "Great Learning",
+    skill: "JavaScript Projects",
+    year: "2024",
+    image: "/GL-JavaScript-C.png",
+  },
+];
 
 const Timeline = () => {
-
-  let certificatedData =[
-    {
-      id:1,
-      institute:"Creative IT Institute",
-      skill:"MERN Stack Development",
-      year:"2023-Continue",
-      image:"/creative.jpg"
-    },
-    {
-      id:2,
-      institute:"Simplilearn",
-      skill:"Basic Front End Development",
-      year:"2024",
-      image:"/simplilearn.jpg"
-    },
-    {
-      id:3,
-      institute:"Bohubrihi",
-      skill:"Introduction to JavaScript",
-      year:"2024",
-      image:"/Bcertificated.jpg"
-    },
-    {
-      id:4,
-      institute:"Great Learning",
-      skill:"Front End Developer -HTML",
-      year:"2024",
-      image:"/great learning certificated.png"
-    },
-    {
-      id:5,
-      institute:"Great Learning",
-      skill:"JavaScript Projects",
-      year:"2024",
-      image:"/GL JavaScript _C.png"
-    },
-  ]
-
-
   const [currentCertificate, setCurrentCertificate] = useState(null);
 
-  const handleCertificateShow = (certificate) => {
-    setCurrentCertificate(certificate);
-  };
   return (
     <div className="w-full border-[3px] mx-auto relative mt-[90px]">
       <div className="uppercase text-[32px] font-semibold leading-[36px] bg-white absolute top-[-30px] left-[50px]">
@@ -61,46 +51,51 @@ const Timeline = () => {
         <h2 className="uppercase text-[26px] font-semibold leading-[32px] text-black mt-[20px]">
           Educational Experience
         </h2>
-        {certificatedData.map((item, index)=>(
-          <div>
+        {certificatedData.map((item, index) => (
+          <div
+            key={item.id}
+            className={`mt-[30px] ${index % 2 === 0 ? "bg-gray-100" : "bg-white"
+              } p-5 rounded-lg shadow-md`}
+          >
             <div className="flex justify-between items-center mt-[30px]">
-          <div>
-            <h3 className="text-[24px] font-semibold leading-[28px] text-black">
-              {item.institute}
-            </h3>
-            <h5 className="text-[20px] font-medium leading-[24px] mt-[14px]">
-              {item.skill}
-            </h5>
-          </div>
-          <div>
-            <button
-              onClick={() => handleCertificateShow("Creative")}
-              className="w-[140px] text-[20px] font-medium leading-[24px] border text-center px-2 py-2"
-            >
-              {item.year}
-            </button>
-            {currentCertificate === "Creative" && (
-              <div className="fixed inset-0 bg-black/60 flex justify-center items-center z-50">
-                <div className="w-[800px] bg-white text-center p-[50px] relative">
-                  <button
-                    onClick={() => setCurrentCertificate(null)}
-                    className="bg-red-500 px-2 rounded-full absolute top-4 right-4 text-white"
-                  >
-                    X
-                  </button>
-                  <img
-                    src={item.image}
-                    alt="idcard"
-                    className="w-full h-auto mb-4"
-                  />
-                </div>
+              <div>
+                <h3 className="text-[24px] font-semibold leading-[28px] text-black">
+                  {item.institute}
+                </h3>
+                <h5 className="text-[20px] font-medium leading-[24px] mt-[14px]">
+                  {item.skill}
+                </h5>
               </div>
-            )}
-          </div>
-        </div>
+              <div>
+                <button
+                  onClick={() => setCurrentCertificate(item.image)}
+                  className="w-[140px] text-[20px] font-medium leading-[24px] border text-center px-2 py-2"
+                >
+                  {item.year}
+                </button>
+              </div>
+            </div>
           </div>
         ))}
       </div>
+
+      {currentCertificate && (
+        <div className="fixed inset-0 bg-black/60 flex justify-center items-center z-50">
+          <div className="w-[800px] bg-white text-center p-[50px] relative">
+            <button
+              onClick={() => setCurrentCertificate(null)}
+              className="bg-red-500 px-2 rounded-full absolute top-4 right-4 text-white"
+            >
+              X
+            </button>
+            <img
+              src={currentCertificate}
+              alt="Certificated"
+              className="w-full h-auto mb-4"
+            />
+          </div>
+        </div>
+      )}
     </div>
   );
 };
