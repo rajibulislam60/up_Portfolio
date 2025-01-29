@@ -65,6 +65,33 @@ const BlogItem = () => {
     link:"https://e-commerce-store-six-zeta.vercel.app/",
     creater:"Rajibul Islam"
   },
+  {
+    id:8,
+    image:"/newspaper.png",
+    name:"NewsPaper",
+    details:"This is online newspaper site. There have every kind of option like- search option, title selection, pagination etc.",
+    date:"Sept 10, 2024",
+    link:"https://news-paper-one.vercel.app/",
+    creater:"Rajibul Islam"
+  },
+  {
+    id:9,
+    image:"/chattingApp.png",
+    name:"Chatting APP",
+    details:"This app for chatting app. There have signup, signin then home page. You can add, friend list, friend request, block and chat etc.",
+    date:"Sept 10, 2024",
+    link:"https://chatting-app-three-omega.vercel.app/signin",
+    creater:"Rajibul Islam"
+  },
+  {
+    id:10,
+    image:"/msgApp.png",
+    name:"MSG APP Home Page",
+    details:"This app for chatting app. There have signup, signin then home page.",
+    date:"Sept 10, 2024",
+    link:"https://msg-app-psi.vercel.app/",
+    creater:"Rajibul Islam"
+  },
 ]
   return (
     <>
