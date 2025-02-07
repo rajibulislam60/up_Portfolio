@@ -8,7 +8,8 @@ const BlogItem = () => {
     name:"TeaPoz",
     details:"How to create Web Development project using React",
     date:"Sept 10, 2024",
-    link:"https://teapoz.vercel.app/",
+    deploylink:"https://teapoz.vercel.app/",
+    codelink:"https://github.com/rajibulislam60/teapoz",
     creater:"Rajibul Islam"
   },
   {
@@ -17,7 +18,8 @@ const BlogItem = () => {
     name:"Secret Movie",
     details:"How to create Web Development project using React",
     date:"Sept 10, 2024",
-    link:"https://movie-site-sage.vercel.app/",
+    deploylink:"https://movie-site-sage.vercel.app/",
+    codelink:"https://github.com/rajibulislam60/MovieSite",
     creater:"Rajibul Islam"
   },
   {
@@ -26,7 +28,8 @@ const BlogItem = () => {
     name:"Coder24",
     details:"This is Coder24 web site. This site work for competition, course details and addmition.",
     date:"Sept 10, 2024",
-    link:"https://coder24.vercel.app/",
+    deploylink:"https://coder24.vercel.app/",
+    codelink:"https://github.com/rajibulislam60/Coder24",
     creater:"Rajibul Islam"
   },
   {
@@ -35,7 +38,8 @@ const BlogItem = () => {
     name:"Weather App",
     details:"This is Weather App.",
     date:"Sept 10, 2024",
-    link:"https://weather-app-chi-two-58.vercel.app/",
+    deploylink:"https://weather-app-chi-two-58.vercel.app/",
+    codelink:"https://github.com/rajibulislam60/WeatherApp",
     creater:"Rajibul Islam"
   },
   {
@@ -44,7 +48,8 @@ const BlogItem = () => {
     name:"AI Chat App",
     details:"This project work by Next.js. This is AI chat app.",
     date:"Sept 10, 2024",
-    link:"https://ai-chat-ecru-iota.vercel.app/",
+    deploylink:"https://ai-chat-ecru-iota.vercel.app/",
+    codelink:"https://github.com/rajibulislam60/ai-chat",
     creater:"Rajibul Islam"
   },
   {
@@ -53,7 +58,8 @@ const BlogItem = () => {
     name:"To Do App",
     details:"This project work by React.js. This is Task managment app, have add, update, delete option.",
     date:"Sept 10, 2024",
-    link:"https://task-management-ten-beige.vercel.app/",
+    deploylink:"https://task-management-ten-beige.vercel.app/",
+    codelink:"https://github.com/rajibulislam60/Task_management",
     creater:"Rajibul Islam"
   },
   {
@@ -62,7 +68,8 @@ const BlogItem = () => {
     name:"E-Commerce Site",
     details:"This project work by React.js. There have every kind of option like- products, ads, related products, cart, add cart etc.",
     date:"Sept 10, 2024",
-    link:"https://e-commerce-store-six-zeta.vercel.app/",
+    deploylink:"https://e-commerce-store-six-zeta.vercel.app/",
+    codelink:"https://github.com/rajibulislam60/E-Commerce_Store",
     creater:"Rajibul Islam"
   },
   {
@@ -71,16 +78,18 @@ const BlogItem = () => {
     name:"NewsPaper",
     details:"This is online newspaper site. There have every kind of option like- search option, title selection, pagination etc.",
     date:"Sept 10, 2024",
-    link:"https://news-paper-one.vercel.app/",
+    deploylink:"https://news-paper-one.vercel.app/",
+    codelink:"https://github.com/rajibulislam60/NewsPaper",
     creater:"Rajibul Islam"
   },
   {
     id:9,
     image:"/chattingApp.png",
     name:"Chatting APP",
-    details:"This app for chatting app. There have signup, signin then home page. You can add, friend list, friend request, block and chat etc.",
+    details:"This app for chatting app. Backend work is firebase. There have signup, signin then home page. You can add, friend list, friend request, block and chat etc.",
     date:"Sept 10, 2024",
-    link:"https://chatting-app-three-omega.vercel.app/signin",
+    deploylink:"https://chatting-app-three-omega.vercel.app/signin",
+    codelink:"https://github.com/rajibulislam60/chattingApp",
     creater:"Rajibul Islam"
   },
   {
@@ -89,7 +98,8 @@ const BlogItem = () => {
     name:"MSG APP Home Page",
     details:"This app for chatting app. There have signup, signin then home page.",
     date:"Sept 10, 2024",
-    link:"https://msg-app-psi.vercel.app/",
+    deploylink:"https://msg-app-psi.vercel.app/",
+    codelink:"https://github.com/rajibulislam60/msgApp",
     creater:"Rajibul Islam"
   },
 ]
@@ -121,11 +131,18 @@ const BlogItem = () => {
         <div className="w-full h-[2px] bg-black/20 mt-5 mb-5"></div>
         <h2 className="text-[24px] font-semibold leading-[28px]">{item.name}</h2>
         <h2 className="text-[18px] font-medium leading-[24px] mt-2">{item.details}</h2>
-        <a href={item.link} target="_blank" rel="noopener noreferrer">
+        <div className='flex gap-4'>
+        <a href={item.deploylink} target="_blank" rel="noopener noreferrer">
           <button className="text-[24px] font-medium leading-[28px] border px-[30px] py-2 hover:bg-black/50 hover:text-white duration-[0.8s] mt-[30px]">
-          Read more
+          Deploy
         </button>
         </a>
+        <a href={item.codelink} target="_blank" rel="noopener noreferrer">
+          <button className="text-[24px] font-medium leading-[28px] border px-[30px] py-2 hover:bg-black/50 hover:text-white duration-[0.8s] mt-[30px]">
+          Code
+        </button>
+        </a>
+        </div>
       </div>
     </div>
           </div>
