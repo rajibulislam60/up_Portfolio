@@ -5,11 +5,12 @@ import { FaFacebookSquare } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
 
 
-const Side = () => {
+const Side = ({className}) => {
     let location = useLocation()
 
   return (
-    <div className="h-screen px-8 py-11">
+    <div className={`${className}`}>
+      <div className="h-screen px-8 py-11">
       <div className="h-full w-[300px] bg-white flex flex-col text-center justify-center">
         <div className="w-[200px] h-[200px] items-center mx-auto">
           <img
@@ -118,6 +119,7 @@ const Side = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }

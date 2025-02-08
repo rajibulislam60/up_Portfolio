@@ -3,8 +3,15 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      maxWidth: {
-        container: "1440px",
+      container: {
+        center:true,
+        screens:{
+          sm:"359px",
+          md:"768px",
+          lg:"960px",
+          xl:"1119px",
+          "2xl":"1440px"
+        }
       },
       animation: {
         spin: 'spin 2s linear infinite', 
@@ -12,8 +19,8 @@ export default {
       },
       keyframes: {
         zoom: {
-          '0%, 100%': { transform: 'scale(1)' }, // Start and end at original size
-          '50%': { transform: 'scale(1.5)' },   // Scale up at the midpoint
+          '0%, 100%': { transform: 'scale(1)' }, 
+          '50%': { transform: 'scale(1.5)' },   
         },
       },
     },

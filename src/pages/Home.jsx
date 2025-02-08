@@ -10,7 +10,7 @@ import { SiExpress } from "react-icons/si";
 
 const Home = () => {
   return (
-    <div className="h-screen w-screen py-11">
+    <div className="h-screen sm:w-full lg:w-full xl:w-full 2xl:w-full sm:py-2 md:py-11 mt-2 md:mt-0">
       <div className="h-full w-full bg-white flex flex-col justify-center items-center relative">
         <h2 className="text-4xl font-bold pt-[50px] z-10">
           Md. Rajibul Islam Rajib
