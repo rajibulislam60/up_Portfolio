@@ -10,9 +10,9 @@ const Side = ({className}) => {
 
   return (
     <div className={`${className}`}>
-      <div className="h-screen px-8 py-11">
-      <div className="h-full w-[300px] bg-white flex flex-col text-center justify-center">
-        <div className="w-[200px] h-[200px] items-center mx-auto">
+      <div className="h-screen px-4  lg:px-8 py-11">
+      <div className="h-full lg:w-[300px] w-[180px] bg-white flex flex-col text-center justify-center">
+        <div className="lg:w-[200px] w-[140px] h-[140px] lg:h-[200px] items-center mx-auto">
           <img
             src={ProfilePic}
             alt="Profile Picture"
@@ -20,10 +20,10 @@ const Side = ({className}) => {
           />
         </div>
         <div>
-          <h2 className="text-2xl font-semibold pt-[50px] mb-[30px]">
+          <h2 className="text-xl lg:text-2xl font-semibold pt-[20px] lg:pt-[50px] mb-[30px]">
             Md. Rajibul Islam Rajib
           </h2>
-          <ul className="text-black/60 text-left px-8">
+          <ul className="text-black/60 text-left px-2 lg:text-xl text-[16px] lg:px-8">
           <li
               className={`${
                 location.pathname === "/"
@@ -31,7 +31,7 @@ const Side = ({className}) => {
                   : "text-primary"
               } font-semibold leading-[24px] duration-[0.4s] mt-3 relative group`}
             >
-              <Link to="/" className="block px-1 py-2">
+              <Link to="/" className="block px-1 lg:py-2 py-1">
                 <span className="absolute inset-0 bg-teal-500 w-0 group-hover:w-full h-full transition-all duration-300"></span>
                 <span className="relative group-hover:text-white z-10">HOME</span>
               </Link>
@@ -97,11 +97,11 @@ const Side = ({className}) => {
               </Link>
             </li>
           </ul>
-          <div className="text-[18px] font-medium leading-[26px] text-black/50 mt-5">
+          <div className="text-[14px] lg:text-[18px] font-medium leading-[26px] text-black/50 mt-5">
             <p>Copyright © 2024 by Marketify</p>
             <p>All rights are reserved</p>
           </div>
-          <div className="flex justify-center gap-2 text-[30px] mt-5">
+          <div className="flex justify-center gap-2 text-[22px] lg:text-[30px] mt-5">
             <a
               href="https://www.facebook.com/profile.php?id=100025401429633"
               target="_blank"
