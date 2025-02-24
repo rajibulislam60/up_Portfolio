@@ -42,34 +42,34 @@ const Timeline = () => {
   const [currentCertificate, setCurrentCertificate] = useState(null);
 
   return (
-    <div className="w-full border-[3px] mx-auto relative mt-[90px]">
-      <div className="uppercase text-[32px] font-semibold leading-[36px] bg-white absolute top-[-30px] left-[50px]">
-        <h3 className="bg-black/15 px-[30px] py-2">Timeline</h3>
+    <div className="w-full border-[3px] mx-auto relative mt-[30px] lg:mt-[90px]">
+      <div className="uppercase text-[18px] lg:text-[32px] font-semibold leading-[36px] bg-white absolute top-[-25px] lg:top-[-30px] left-[20px] lg:left-[50px]">
+        <h3 className="bg-black/15 px-[15px] lg:px-[30px] py-1 lg:py-2">Timeline</h3>
       </div>
 
-      <div className="py-[30px] px-[50px] text-black/50">
-        <h2 className="uppercase text-[26px] font-semibold leading-[32px] text-black mt-[20px]">
+      <div className="py-[10px] lg:py-[30px] px-[15px] lg:px-[50px] text-black/50">
+        <h2 className="uppercase text-[16px] lg:text-[26px] font-semibold leading-[32px] text-black mt-[20px]">
           Educational Experience
         </h2>
         {certificatedData.map((item, index) => (
           <div
             key={item.id}
-            className={`mt-[30px] ${index % 2 === 0 ? "bg-gray-100" : "bg-white"
+            className={`mt-[10px] lg:mt-[30px] ${index % 2 === 0 ? "bg-gray-100" : "bg-white"
               } p-5 rounded-lg shadow-md`}
           >
-            <div className="flex justify-between items-center mt-[30px]">
+            <div className="flex justify-between items-center mt-[10px] lg:mt-[30px]">
               <div>
-                <h3 className="text-[24px] font-semibold leading-[28px] text-black">
+                <h3 className="text-[16px] lg:text-[24px] font-semibold leading-[28px] text-black">
                   {item.institute}
                 </h3>
-                <h5 className="text-[20px] font-medium leading-[24px] mt-[14px]">
+                <h5 className="text-[14px] lg:text-[20px] font-medium leading-[24px] mt-[8px] lg:mt-[14px]">
                   {item.skill}
                 </h5>
               </div>
               <div>
                 <button
                   onClick={() => setCurrentCertificate(item.image)}
-                  className="w-[140px] text-[20px] font-medium leading-[24px] border text-center px-2 py-2"
+                  className="w-[70px] lg:w-[140px] text-[14px] lg:text-[20px] font-medium leading-[24px] border text-center px-2 py-2"
                 >
                   {item.year}
                 </button>
