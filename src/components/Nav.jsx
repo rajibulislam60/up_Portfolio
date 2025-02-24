@@ -9,8 +9,7 @@ const Nav = ({ className }) => {
 
   return (
     <div className={`${className}`}>
-      {/* Top Bar */}
-      <div className='flex justify-between sm:w-full md:w-full bg-white px-2 py-3'>
+      <div className='flex justify-between items-center sm:w-full md:w-full bg-white px-2 py-3'>
         <div className='w-[50px] h-[50px] items-center'>
           <img className='w-full h-full object-cover rounded-full' src={ProfilePic} alt="Profile" />
         </div>
