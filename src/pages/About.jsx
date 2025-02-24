@@ -12,7 +12,7 @@ const About = () => {
   };
 
   return (
-    <div className="min-h-screen sm:w-full lg:w-full xl:w-full 2xl:w-full sm:py-2 md:py-11 mt-2 md:mt-0">
+    <div className="max-h-screen sm:w-full lg:w-full xl:w-full 2xl:w-full sm:py-2 md:py-11 mt-2 md:mt-0">
       <div className="w-full h-full bg-white">
         <div className="w-full h-full px-[20px] lg:px-[60px] py-[30px] lg:py-[60px] overflow-auto hide-scrollbar">
           <div className="w-full border-[3px] mx-auto relative">
