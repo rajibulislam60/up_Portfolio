@@ -105,40 +105,40 @@ const BlogItem = () => {
 ]
   return (
     <>
-      <div className='px-5 py-5'>
+      <div className='px-2 lg:px-5 py-2 lg:py-5'>
         {workData.map((item, index)=>(
-          <div key={item.id} className={`flex items-center justify-center gap-10 mt-[30px] ${
+          <div key={item.id} className={`lg:flex items-center justify-center gap-3 lg:gap-10 mt-4 lg:mt-[30px] ${
             index % 2 === 0 ? "bg-gray-100" : "bg-white"
           } p-5 rounded-lg shadow-md`}>
-            <div className="flex items-center justify-center gap-10 mt-[30px]">
-      <div className="w-[48%] h-[250px] relative">
+            <div className="lg:flex items-center justify-center lg:gap-10 mt-3 lg:mt-[30px]">
+      <div className="w-full lg:w-[48%] lg:h-[250px] relative">
         <div className=" w-full h-full overflow-hidden">
           <a href={item.link} target="_blank" rel="noopener noreferrer">
             <img src={item.image} alt={item.name} />
           </a>
         </div>
-        <h4 className="px-6 py-2 bg-white text-black absolute top-7 left-7">
+        <h4 className="px-2 lg:px-6 py-1 lg:py-2 bg-white text-black absolute top-2 left-2 lg:top-7 lg:left-7">
           {item.date}
         </h4>
       </div>
-      <div className="w-[48%]">
-        <h5 className="text-[20px] font-medium leading-[24px] text-black/50">
+      <div className="w-full lg:w-[48%]">
+        <h5 className="text-[14px] lg:text-[20px] font-medium leading-[24px] text-black/50">
           by{" "}
-          <span className="text-[24px] font-semibold leading-[28px]">
+          <span className="text-[16px] lg:text-[24px] font-semibold leading-[28px]">
             {item.creater}
           </span>
         </h5>
-        <div className="w-full h-[2px] bg-black/20 mt-5 mb-5"></div>
-        <h2 className="text-[24px] font-semibold leading-[28px]">{item.name}</h2>
-        <h2 className="text-[18px] font-medium leading-[24px] mt-2">{item.details}</h2>
+        <div className="w-full h-[2px] bg-black/20 mt-2 lg:mt-5 mb-2 lg:mb-5"></div>
+        <h2 className="text-[16px] lg:text-[24px] font-semibold leading-[28px]">{item.name}</h2>
+        <h2 className="text-[12px] lg:text-[18px] font-medium leading-[16px] lg:leading-[24px] mt-0 lg:mt-2">{item.details}</h2>
         <div className='flex gap-4'>
         <a href={item.deploylink} target="_blank" rel="noopener noreferrer">
-          <button className="text-[24px] font-medium leading-[28px] border px-[30px] py-2 hover:bg-black/50 hover:text-white duration-[0.8s] mt-[30px]">
+          <button className="text-[16px] lg:text-[24px] font-medium leading-[20px] lg:leading-[28px] border px-3 lg:px-[30px] py-1 lg:py-2 hover:bg-black/50 hover:text-white duration-[0.8s] mt-[14px] lg:mt-[30px]">
           Deploy
         </button>
         </a>
         <a href={item.codelink} target="_blank" rel="noopener noreferrer">
-          <button className="text-[24px] font-medium leading-[28px] border px-[30px] py-2 hover:bg-black/50 hover:text-white duration-[0.8s] mt-[30px]">
+          <button className="text-[16px] lg:text-[24px] font-medium leading-[20px] lg:leading-[28px] border px-3 lg:px-[30px] py-1 lg:py-2 hover:bg-black/50 hover:text-white duration-[0.8s] mt-[14px] lg:mt-[30px]">
           Code
         </button>
         </a>
