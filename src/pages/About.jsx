@@ -3,6 +3,7 @@ import { CgQuote } from "react-icons/cg";
 import Resume from "./../../public/SimpleResume.pdf";
 import Timeline from "../components/Timeline";
 import Skills from "../components/Skills";
+import Experience from "../components/Experience";
 
 const About = () => {
   const [cvOpen, setCVOpen] = useState(false);
@@ -104,7 +105,7 @@ const About = () => {
           </div>
           <Skills/>
           <Timeline />
-
+          <Experience/>
           <div className="w-full border-[3px] mx-auto relative mt-[30px] lg:mt-[90px]">
             <div className="uppercase text-[18px] lg:text-[32px] font-semibold leading-[36px] bg-white absolute top-[-25px] lg:top-[-30px] left-[20px] lg:left-[50px]">
               <h3 className="bg-black/15 px-[15px] lg:px-[30px] py-1 lg:py-2">Career Objective</h3>
