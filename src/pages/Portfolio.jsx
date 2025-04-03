@@ -2,6 +2,7 @@ import React from "react";
 import FacebookImg from "./../../public/facebook.jpg";
 import LinkedInImg from "./../../public/linkedIn.jpg";
 import GithubImg from "./../../public/github.jfif";
+import Hackathon from "../components/Hackathon";
 
 const socialLinks = [
   {
@@ -69,6 +70,7 @@ const Portfolio = () => {
               </ul>
             </div>
           </div>
+          <Hackathon/>
         </div>
       </div>
     </div>
